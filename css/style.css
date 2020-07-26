@@ -1,11 +1,226 @@
+:root{
+  --primary-color:#1DA1F2;
+}
 *{
   padding:0;
   margin:0;
   outline: 0;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility !important;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans' ,Arial, Helvetica, sans-serif;
+ 
 }
 
 html,body{
   height: 100%;
 }
 
+.material-icons{
+  color:#fff;
+}
+
+
+
+.main-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sessao1{
+  width: 50%;
+  padding:20px 30px;
+  background-color:#1da0f265;
+  color:#fff;
+}
+
+
+.bg{
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  background-image: url('../assets/img/logo.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: bottom
+
+}
+
+.list{
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding:160px  0 160px 100px;
+  
+}
+
+.list p{
+font-size:18px;
+line-height: 28px;
+font-weight: bold;
+margin: 15px 0;
+}
+
+.sessao2{
+  padding: 20px 2%;
+}
+
+
+.sessao2 form{
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  padding:10px 0;
+  
+}
+
+.sessao2 form .campo:nth-child(1) {
+ padding-left: 80px;
+}
+
+.sessao2 form .campo label{
+  font-size:13px;
+  line-height: 23px;
+  color:var(--primary-color);
+}
+
+.sessao2 form .campo input{
+  margin-top:8px;
+  border-right:0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1.4px solid var(--primary-color);
+}
+.sessao2 form .campo a{
+  font-size:13px;
+  line-height: 21px;
+  padding-left: 8px;
+  text-decoration: none;
+  color:var(--primary-color)  
+}
+
+
+.sessao2 form .campo .btn{
+  margin: 10px 0 0 20px;
+  padding: 10px;
+  background-color:white;
+  border: 1px solid var(--primary-color);
+  color:var(--primary-color);
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.sessao2-content{
+  margin:50px auto; 
+  max-width: 500px;
+  text-align: center;
+
+  
+ 
+}
+
+.sessao2-content .logo{
+  display: inline-block;
+  width:50px;
+  height:40px;
+  background-image: url(../assets/img/logo.png);
+  background-size:100% 100%;
+  margin:30px;
+
+}
+
+.sessao2-content h2{
+  text-align: center;
+  font-size:28px;
+}
+
+.buttons{
+  max-width: 550px;
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.buttons p{
+  font-size:13px;
+  line-height: 23px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.buttons .btn, .btn1{
+  width: 425px;
+  height: 40px;
+  margin: 10px; 
+  font-weight: bold;
+}
+
+
+.btn{
+  background-color:#1DA1F2;
+  border:0;
+  border-radius: 20px;
+  color:white;
+}
+
+.btn1{
+  border:1px solid #1DA1F2;
+  color:#1DA1F2;
+  border-radius: 20px;
+}
+
+.buttons .btn, .btn1:hover{
+  transition: 0.9s;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+footer{
+  padding:30px;
+  text-align: center;
+}
+
+
+
+fotter ul{
+  list-style-type: none;
+}
+
+footer li{
+  font-size:13px;
+  display: inline-block;
+  padding: 0 8px;
+}
+
+
+footer ul li a{
+  text-decoration: none;
+  color:rgb(104, 101, 101);
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+}
+
+footer span{
+  font-size:13px;
+
+}
+
+footer span > a{
+  color:rgb(104, 101, 101);
+  text-decoration: none;
+  position: relative;
+  top:10px;
+}
+
+footer span a:hover{
+  text-decoration: underline;
+}
