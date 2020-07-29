@@ -1,5 +1,6 @@
 :root{
   --primary-color:#1DA1F2;
+  --cor-cinza:rgb(236, 236, 236);
 }
 *{
   padding:0;
@@ -17,113 +18,160 @@ html,body{
   height: 100%;
 }
 
-.container{
-   width: 100%;
-   max-width: 700px;
-   margin: 0 auto;
+.app{
+  display: grid;
+  grid-template-columns:  250px 1fr 300px;
 }
 
 
 
 .header-content{
-  width: 20%;
-  padding:5px 1%;
-  border-right: 1px solid #ccc;
-  height: 100%;
-  position: fixed;
+  
+  padding-top:20px;
+  padding: 0 2%;
+  border-right: 1px solid rgb(236, 236, 236);
+
+
+  
 }
 
-
-.header-content > .container {
-  height: 100%;
-  text-align: center;
+.content{
+  margin:20px 0px 0 20px;
 }
 
-.header-content .logo{
-  width: 30px;
-  height: 25px;
-  margin:10px 0 15px 15px;
+.logo{
+  width: 23px;
+  height: 23px;
   background-image: url('../assets/img/logo.png');
   background-size:100% 100%;
-  background-position: center;
-
-
 }
 
 
-
-.header-content nav{
-  margin-top:40px;
-  
-
-}
-
-.header-content ul{
-  list-style-type: none;
-}
-
-.header-content ul li{
-  display: flex;
-  flex-direction: row;
+.header-content > .content nav{
   margin-top:20px;
-  justify-content: flex-start;
-  font-size:20px;
-  padding: 0 8px;
-  font-weight: bold;
-}
-
-.header-content ul li span{
-  padding: 0 16px 0 0;
-}
-
-.header-content ul li:hover{
-  transition:1s;
-  color:var(--primary-color);
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.header-content button{
-   margin: 30px 0;
-   padding:10px;
-   background-color:var(--primary-color);
-   color:#fff;
-   width: 200px;
-   height: 50px;
-   border:0;
-   font-size: 18px;
-   font-weight: bold;
-   border-radius: 30px;
-}
-
-.header-content button:hover{
-  transition:2s;
-  cursor: pointer;
-  text-shadow: 1px 1px 2px black;
-  filter:blur(80%);
 }
 
 .user-info{
-  border-top:1px solid #ccc;
-  padding-top:20px;
-  margin-top:30px;
-  display: flex;
-  justify-content: flex-start;
+  border-top:1px solid rgb(236, 236, 236);
 }
 
-.user-info .material-icons{
-  background-color:rgba(200,200,200,0.8);
-  padding:10px 13px 0 13px;
+.content  ul  {
+  list-style-type:  none;
+}
+
+.header-content ul li{
+  margin-top:25px;
+  font-size:20px;
+  font-weight: bold;
+}
+
+.header-content ul li:hover{
+  transition:2s;
+  color:var(--primary-color);
+  cursor: pointer;
+}
+
+.content .button{
+  margin:40px 0 40px 0;
+}
+
+.content > .button > button{
+  padding: 10px;
+  width:180px;
+  background-color:var(--primary-color);
+  border:0;
+  color:white;
+  height: 60px;
+  font-size:15px;
+  font-weight: bold;
+  border-radius: 40px;
+
+}
+
+.user-info{
+
+  border-top: 1px solid rgb(236, 236, 236);
+  display: flex;
+  padding:10px;
+}
+
+.user-info span{
+  background-color:gray;
+  padding:10px;
   border-radius: 50%;
-  color:gray;
-  margin:0 8px;
+  margin: 8px 8px 0 0;
+}
+
+.user-name{
+  margin:10px 10px 0 5px;
+  text-align: center;
+  padding-left: 10px;;
+}
+
+.user-name p{
+  font-size:13px;
+  line-height: 23px;
+
 }
 
 .user-name p:nth-child(1){
   font-weight: bold;
 }
 
-.user-name p{
-  margin:5px 0;
-  font-size:13px;
+
+.feed{
+  padding-top:20px;
+  border:  1px solid rgb(236, 236, 236);
+ 
 }
+
+
+.user-status{
+  width: 100%;
+  padding: 0 2%;
+}
+
+.title{
+  padding-bottom:8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-cinza);
+}
+
+.title h2{
+  font-size:18px;
+  line-height: 28px;
+}
+
+.title span {
+  color:rgb(190, 190, 190);
+}
+
+.title span:hover{
+  transition: 2s;
+  color:var(--primary-color);
+  cursor: pointer;
+}
+
+.user-tweet{
+  padding-top:20px;
+}
+
+.user-tweet span{
+  color:rgb(175, 170, 170);
+  background-color:rgb(207, 199, 199);
+  padding:10px;
+  border-radius: 50%;
+}
+
+.followers{
+  padding-top:30px;
+  border-left: 1px solid rgb(236, 236, 236);
+  position: fixed;
+  
+}
+
+
+
+
