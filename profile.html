@@ -13,62 +13,58 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  
 </head>
 
 <body>
-  <div class="app">
-    <header class="header-content">
-      <div class="content">
-        <div class="logo"></div><!--logo-->
-        <nav>
-          <ul>
-            <li> <span class="material-icons">home </span> Home</li>
-            <li><span class="material-icons">search</span> Explore</li>
-            <li><span class="material-icons">  notifications_none </span> Notifications</li>
-            <li><span class="material-icons">chat_bubble_outline</span> Message </li>
-            <li><span class="material-icons"> bookmark_border</span> BookMarks</li>
-            <li><span class="material-icons"> receipt_long</span> Lists </li>
-            <li><span class="material-icons"> person_outline </span> Profile</li>
-            <li> <span class="material-icons"> more_horiz </span> More</li>
-          </ul>
-        </nav>
-        <div class="button">
-          <button> Tweetar </button>
-        </div><!--button-->
-         <div class="user-info">
-         <span class="material-icons"> person </span>
-         <div class="user-name">
-            <p> UserXXX</p>
-             <p> @UserXXX</p>
-          </div><!--user-name-->
-        </nav>
-      </div><!--content-->
-    </header><!--header-content-->
+  <header class="main-header">
+    <div class="main-header-content">
+      <img src="assets/img/logo.png" alt="logo do twitter" class="logo">
+      <div class="item">
+        <img src="assets/img/icomoon/icomoon/SVG/home.svg"  alt="icone de uma casa">
+        <span> home</span>
+      </div><!--item-->
+      <div class="item">
+        <img src="assets/img/icomoon/icomoon/SVG/hashtag.svg"  alt="icone de hashtag">
+        <span> Explore </span>
+      </div><!--item-->
+      <div class="item">
+        <img src="assets/img/icomoon/icomoon/SVG/envelope.svg" alt="icone de mensagem">
+        <span> Message</span>
+      </div><!--item-->
 
-    <section class="feed">
-      <div class="user-status">
-        <div class="title">
-          <h2> Página Inicial</h2>
-          <span class="material-icons">  star_outline </span>
-        </div><!--title-->
-        <div class="user-tweet">
-          <span class="material-icons"> person</span>
-          <input type="text" placeholder="O que você está pensando ?">
+      <div class="item">
+        <img src="assets/img/icomoon/icomoon/SVG/bell.svg" alt="icone de mensagem">
+        <span> Notifications</span>
+        <span></span>
+      </div><!--item-->
+       
+      <div class="item">
+        <img src="assets/img/icomoon/icomoon/SVG/bookmark.svg" alt="icone de book">
+        <span> Bookmarks</span>
+      </div>
 
-        </div>
+      <div class="item">
+        <img src="assets/img/icomoon/icomoon/SVG/file-text2.svg" alt="icone de lista">
+        <span> List </span>
+      </div>
 
-
-      </div><!--user-status-->
-
-
-
-
-    </section><!--feed-->
-   
-    <section class="followers"></section>
-  
+      <div class="item">
+        <img src="https://vignette.wikia.nocookie.net/joke-battles/images/7/79/1550715-chuck_norris_2.jpg/revision/latest/scale-to-width-down/340?cb=20151201004133" alt="imagem de perfil" class="logo profile1">
+        <span> List</span>
+      </div>
+    </div><!--content-->
     
+    <div class="profile">
+      <img src="https://vignette.wikia.nocookie.net/joke-battles/images/7/79/1550715-chuck_norris_2.jpg/revision/latest/scale-to-width-down/340?cb=20151201004133" alt="imagem de perfil" class="profile-img">
+      <div class="profile-info">
+        <strong> Chuck Norris</strong>
+        <p> BadassNorris@chucknorris.com</p>
+      </div><!---->
+    </div><!--profile-->
+ 
+  </header><!--hero-content-->
 
 
-  </div><!--app-->
 </body>
