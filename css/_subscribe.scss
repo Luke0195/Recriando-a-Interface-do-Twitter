@@ -87,7 +87,7 @@ main{
     
   }
 
-  .form-content form button{
+  .form-content form .linkenviar{
     width: 100%;
     background-color: $primary-color;
     border:0;
@@ -100,6 +100,7 @@ main{
     border-radius: 30px;
     font-weight: bold;
     color: #fff;
+    text-decoration: none;
     
   }
 

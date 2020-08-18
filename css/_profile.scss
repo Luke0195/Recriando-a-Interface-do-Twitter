@@ -1,0 +1,134 @@
+$primary-color:#00acee;
+$background-color: #F5F8FA;
+$light-gray:#AAB8C2;
+
+*{
+  padding:0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+.material-icons{
+  color:black;
+  font-size:30px;
+}
+
+.material-icons:hover{
+  color:$primary-color;
+}
+html,body{
+  height: 100%;
+  background-color: $background-color;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: 300px 2fr 280px;
+  grid-template-rows: 100% 100vh 5vh;
+}
+
+.headerItem{
+  grid-column: 1/2;
+  grid-row: 1/1;
+  padding: 25px;
+  border-right: 1px solid $light-gray;
+  
+  
+  .header-content{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  
+  .header-content .item{
+    display: flex;
+    align-items: center;
+    margin:10px 0;
+    font-size:24px;
+    font-weight: bold;
+  }
+
+  
+
+
+  .header-content .item span+span{
+    padding-left: 10px;
+  }
+
+  
+  .header-content .item img+span{
+    padding-left: 10px;
+    padding-top:20px;
+  }
+ .header-content .logo{
+   width: 40px;
+   height: 30px; 
+  }
+  
+  .header-content .item:hover span{
+    transition:0.8s;
+    text-shadow: 1px 1px 1px rbga(0,0,0,0.4);
+    color:$primary-color;
+    cursor: pointer;
+  }
+
+  .item .profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .header-content .item a{
+    background-color:$primary-color;
+    width: 80%;
+    text-align: center;
+    color:#fff;
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: normal;
+    font-size:16px;
+    margin-top:10px;
+  }
+
+  .header-content .item a:hover{
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+  }
+
+  .profile .profileimg{
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .profile .profile-info{
+    padding-left: 8px;
+  }
+
+}
+
+.mainItem{
+  background-color:blue;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+}
+
+.rodapeItem{
+  background-color:gray;
+  grid-column: 3/4; 
+  grid-row: 1/-1;
+}
+  
+  

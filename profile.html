@@ -8,7 +8,7 @@
   <meta name="description" content="recriando a interface a interface do twitter">
   <meta name="keywords" content="HTML5,CSS3,JS,Front-end,Web-Designer">
   <meta nmae="viewport" content="width=width-device,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/profile.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="assets/img/twitter.svg" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,53 +18,75 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header-content">
-      <img src="assets/img/logo.png" alt="logo do twitter" class="logo">
-      <div class="item">
-        <img src="assets/img/icomoon/icomoon/SVG/home.svg"  alt="icone de uma casa">
-        <span> home</span>
-      </div><!--item-->
-      <div class="item">
-        <img src="assets/img/icomoon/icomoon/SVG/hashtag.svg"  alt="icone de hashtag">
-        <span> Explore </span>
-      </div><!--item-->
-      <div class="item">
-        <img src="assets/img/icomoon/icomoon/SVG/envelope.svg" alt="icone de mensagem">
-        <span> Message</span>
-      </div><!--item-->
+  <div class="grid-container">
+    <header class="headerItem">
+      <div class="header-content">
+        <img src="assets/img/logo.png" alt="logo do twitter" class="logo">
+        <div class="item">
+          <span class="material-icons"> home</span>
+          <span> Home</span>
+        </div>
 
-      <div class="item">
-        <img src="assets/img/icomoon/icomoon/SVG/bell.svg" alt="icone de mensagem">
-        <span> Notifications</span>
-        <span></span>
-      </div><!--item-->
+        <div class="item">
+          <span class="material-icons"> grid_on</span>
+          <span> Explore</span>
+        </div>
+
+        <div class="item">
+          <span class="material-icons"> chat_bubble_outline</span>
+          <span> Messages</span>
+        </div>
+
        
-      <div class="item">
-        <img src="assets/img/icomoon/icomoon/SVG/bookmark.svg" alt="icone de book">
-        <span> Bookmarks</span>
-      </div>
 
-      <div class="item">
-        <img src="assets/img/icomoon/icomoon/SVG/file-text2.svg" alt="icone de lista">
-        <span> List </span>
-      </div>
+        <div class="item">
+          <span class="material-icons"> bookmark_border</span>
+          <span> Bookmarks</span>
+        </div>
 
-      <div class="item">
-        <img src="https://vignette.wikia.nocookie.net/joke-battles/images/7/79/1550715-chuck_norris_2.jpg/revision/latest/scale-to-width-down/340?cb=20151201004133" alt="imagem de perfil" class="logo profile1">
-        <span> List</span>
-      </div>
-    </div><!--content-->
-    
-    <div class="profile">
-      <img src="https://vignette.wikia.nocookie.net/joke-battles/images/7/79/1550715-chuck_norris_2.jpg/revision/latest/scale-to-width-down/340?cb=20151201004133" alt="imagem de perfil" class="profile-img">
-      <div class="profile-info">
-        <strong> Chuck Norris</strong>
-        <p> BadassNorris@chucknorris.com</p>
-      </div><!---->
-    </div><!--profile-->
- 
-  </header><!--hero-content-->
+        <div class="item">
+          <span class="material-icons">reorder </span>
+          <span> List </span>
+        </div>
 
+        <div class="item">
+          <img src="https://olhardireto.com.br/imgsite/noticias/0001032010162255.jpg" alt="imagem de perfil" class="profile">
+          <span> Profile</span>
+        </div>
+
+        <div class="item">
+          <span class="material-icons">perm_identity</span>
+          <span> More </span>
+        </div>
+
+        <div class="item">
+          <a href="#" target="_blank"> Tweet </a>
+        </div>
+        
+        <div class="profile">
+          <img src="https://olhardireto.com.br/imgsite/noticias/0001032010162255.jpg" alt="imagem de perfil" class="profileimg">
+          <div class="profile-info">
+            <strong> Chuck Norris </strong>
+            <span>@ChuckNorris929292</span>
+          </div>
+        </div>
+
+
+      
+        
+
+
+
+      </div><!--header-container-->
+
+
+
+    </header>
+    <main class="mainItem"></main>
+    <footer class="rodapeItem"></footer>
+
+
+  </div><!--grid-container-->
 
 </body>
+</html>
